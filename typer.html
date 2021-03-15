@@ -231,6 +231,7 @@ textarea {
 <button onclick="copytext()">Copy text</button>
 <button onclick="sanskrit()">Sanskrit</button>
 <button onclick="wikt()">Wikt.</button>
+<button onclick="navert()">Naver</button>
 <script>
 function sanskrit() {
 window.open("https://sanskritdictionary.com/?iencoding=iast&q=" + document.getElementById('output_textarea').value + "&lang=sans&action=Search", "_blank");
@@ -240,6 +241,9 @@ window.open("https://sanskritdictionary.com/?iencoding=iast&q=" + document.getEl
 }
 function wikt() {
 	window.open("https://en.wiktionary.org/wiki/" + document.getElementById('output_textarea').value, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=300,width=600,height=600");
+}
+function naver() {
+	window.open("https://dict.naver.com/hikodict/#/search?query=" + document.getElementById('output_textarea').value, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=300,width=600,height=600");
 }
 </script>
 </th>
